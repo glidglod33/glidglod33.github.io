@@ -50,19 +50,40 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label>Naam:<br><input type="text" name="naam"></label><br>
-        <label>Email:<br><input type="email" name="email"></label><br>
-        <label>Bericht:<br><textarea name="bericht"></textarea></label><br>
-        <button type="submit">Versturen</button>
-      </form>
-    </section>
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <div>
+      <label for="naam">Naam:</label><br>
+      <input type="text" id="naam" name="naam" required>
+    </div>
+    <div>
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="bericht">Bericht:</label><br>
+      <textarea id="bericht" name="bericht" rows="5" required></textarea>
+    </div>
+    <button type="submit">Versturen</button>
+    <p id="formMessage" style="display:none; color: green; margin-top: 10px;">
+      Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.
+    </p>
+  </form>
+</section>
   </main>
   <footer>
     <p>&copy; 2025 Eren</p>
     <a href="https://github.com/glidglod33">GitHub</a> |
     <a href="https://www.linkedin.com/in/jamalljacksonusf?trk=people-guest_people_search-card">LinkedIn</a>
   </footer>
+
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    document.getElementById("formMessage").style.display = "block";
+    this.reset();
+  });
+</script>
+
 </body>
 </html>
