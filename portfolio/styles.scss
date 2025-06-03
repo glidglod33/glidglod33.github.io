@@ -1,0 +1,43 @@
+$primary-color: #4a90e2;
+$secondary-color: #f5f5f5;
+$text-color: #333;
+$spacing: 16px;
+$font-stack: 'Segoe UI', sans-serif;
+
+body {
+  font-family: $font-stack;
+  color: $text-color;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: $spacing;
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: $spacing / 2;
+      padding: 0;
+
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  padding: $spacing * 2;
+}
