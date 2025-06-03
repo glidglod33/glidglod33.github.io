@@ -1,43 +1,95 @@
+// SCSS Variabelen
 $primary-color: #4a90e2;
-$secondary-color: #f5f5f5;
+$background-color: #f9f9f9;
 $text-color: #333;
+$font: 'Segoe UI', sans-serif;
 $spacing: 16px;
-$font-stack: 'Segoe UI', sans-serif;
 
+// Algemene styling
 body {
-  font-family: $font-stack;
-  color: $text-color;
-  background-color: $secondary-color;
   margin: 0;
   padding: 0;
+  font-family: $font;
+  background-color: $background-color;
+  color: $text-color;
 }
 
-.header {
+header.header {
   background-color: $primary-color;
   color: white;
   padding: $spacing;
 
-  &__nav {
-    ul {
-      list-style: none;
-      display: flex;
-      gap: $spacing / 2;
-      padding: 0;
+  h1 {
+    margin: 0 0 $spacing 0;
+  }
 
-      li {
-        a {
-          color: white;
-          text-decoration: none;
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: $spacing;
+    padding: 0;
 
-          &:hover {
-            text-decoration: underline;
-          }
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
   }
 }
 
-section {
-  padding: $spacing * 2;
+main {
+  section {
+    padding: $spacing * 2;
+
+    h2 {
+      color: $primary-color;
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: $spacing;
+
+  a {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+
+  input,
+  textarea {
+    padding: $spacing / 2;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    padding: $spacing / 2;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
 }
