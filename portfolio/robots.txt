@@ -1,0 +1,5 @@
+# robots.txt voor portfolio website
+User-agent: *
+Disallow:
+
+Sitemap: https://glidglod33.github.io/portfolio/sitemap.xml
