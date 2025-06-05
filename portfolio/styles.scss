@@ -1,9 +1,11 @@
+// 🎨 Kleuren en instellingen
 $primary-color: #4a90e2;
 $background-color: #f9f9f9;
 $text-color: #333;
 $spacing: 16px;
 $font-stack: 'Segoe UI', sans-serif;
 
+// 🌍 Basisstructuur
 html, body {
   height: 100%;
   margin: 0;
@@ -19,6 +21,7 @@ body {
   background-color: $background-color;
 }
 
+// 🧭 Header met navigatie
 header.header {
   background-color: $primary-color;
   color: white;
@@ -47,8 +50,9 @@ header.header {
   }
 }
 
+// 📦 Hoofdinhoud (duwt footer naar onder)
 main {
-  flex: 1; // <- maakt sticky footer mogelijk
+  flex: 1;
   padding: $spacing;
 
   #projecten {
@@ -77,6 +81,7 @@ main {
   }
 }
 
+// 📬 Contactformulier
 form {
   display: flex;
   flex-direction: column;
@@ -103,6 +108,7 @@ form {
   }
 }
 
+// 📍 Footer — altijd onderaan
 footer {
   background-color: $primary-color;
   color: white;
