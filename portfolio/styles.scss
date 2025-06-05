@@ -11,12 +11,12 @@ html, body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: $font-stack;
   color: $text-color;
   background-color: $background-color;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; // maakt sticky footer mogelijk
 }
 
 header.header {
@@ -48,7 +48,7 @@ header.header {
 }
 
 main {
-  flex: 1; // Zorgt dat de main de ruimte opvult
+  flex: 1; // <- maakt sticky footer mogelijk
   padding: $spacing;
 
   #projecten {
@@ -108,9 +108,6 @@ footer {
   color: white;
   text-align: center;
   padding: $spacing;
-
-  // Optioneel: extra ruimte erboven
-  margin-top: $spacing;
 
   a {
     color: white;
