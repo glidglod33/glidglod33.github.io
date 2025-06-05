@@ -26,15 +26,6 @@
       <p>Ik ben een gepassioneerde frontend developer met ervaring in HTML, CSS, Php, JavaScript en SCSS. Mijn doel is om toegankelijke, moderne websites te bouwen.</p>
     </section>
 
-    <section id="projecten">
-      <article>
-      <h2>Projecten</h2>
-        <h3>Portfolio Website</h3>
-        <p>Een responsive portfolio gemaakt met HTML5, CSS Grid en Flexbox.</p>
-        <a href="https://github.com/glidglod33/portfolio">Bekijk op GitHub</a>
-      </article>
-    </section>
-
     <section id="ervaring">
       <h2>Werkervaring</h2>
       <article>
@@ -49,41 +40,12 @@
       </article>
     </section>
 
-    <section id="contact">
-  <h2>Contact</h2>
-  <form id="contactForm">
-    <div>
-      <label for="naam">Naam:</label><br>
-      <input type="text" id="naam" name="naam" required>
-    </div>
-    <div>
-      <label for="email">E-mail:</label><br>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="bericht">Bericht:</label><br>
-      <textarea id="bericht" name="bericht" rows="5" required></textarea>
-    </div>
-    <button type="submit">Versturen</button>
-    <p id="formMessage" style="display:none; color: green; margin-top: 10px;">
-      Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.
-    </p>
-  </form>
-</section>
   </main>
   <footer>
     <p>&copy; 2025 Eren</p>
     <a href="https://github.com/glidglod33">GitHub</a> |
     <a href="https://www.linkedin.com/in/jamalljacksonusf?trk=people-guest_people_search-card">LinkedIn</a>
   </footer>
-
-  <script>
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); 
-    document.getElementById("formMessage").style.display = "block";
-    this.reset();
-  });
-</script>
 
 </body>
 </html>
